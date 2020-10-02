@@ -34,6 +34,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
     "import/prefer-default-export": "off",
     "no-use-before-define": "off",
+    "import/no-unresolved": "off",
     "prettier/prettier": "error",
     "import/extensions": [
       "error",
@@ -46,7 +47,10 @@
   },
   "settings": {
     "import/resolver": {
-      "typescript": {}
+      "typescript": {},
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
     }
   }
 }
