@@ -3,7 +3,7 @@ import GlobalStyle from './style/globals';
 import SignIn from './pages/SingIn';
 // import SignUp from './pages/SingUp';
 
-import { AuthProvider } from './context/AuthContext';
+import { AuthProvider } from './hooks/AuthContext';
 
 const App: React.FC = () => {
   return (
