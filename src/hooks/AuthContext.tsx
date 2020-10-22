@@ -47,9 +47,9 @@ const AuthProvider: React.FC = ({ children }) => {
   const singOut = useCallback(() => {
     localStorage.removeItem('@GoBarber:token');
     localStorage.removeItem('@GoBarber:user');
-  }, []);
 
-  setData({} as AuthState);
+    setData({} as AuthState);
+  }, []);
 
   return (
     <AuthContext.Provider value={{ user: data.user, signIn, singOut }}>
