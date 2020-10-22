@@ -11,6 +11,7 @@ const App: React.FC = () => {
       <AuthProvider>
         <SignIn />
       </AuthProvider>
+
       <GlobalStyle />
     </>
   );
